@@ -15,7 +15,7 @@ winner = 0
 while end_game == False:
   for i in range(0 , num_players):
     bet = int(input(f"Enter your bet,{list_username[i]}\n"))
-    guess = str(input("Enter guess\n"))
+    guess = str(input("Enter guess: Heads or Tails\n"))
     if guess == list_choices[computer_guess]:
       list_networth[i] += bet
     elif guess != list_choices[computer_guess]:
